@@ -1,0 +1,70 @@
+.card{
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    padding: 20px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.container-card{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+    gap: 25px;
+    padding: 0 20px;
+    margin-top: 20px;
+}
+.h1{
+    color:#9d2967;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+.title{
+    font-weight: 600;
+    color: #7a1f52;
+    padding:10px;
+}
+.detail{
+    border: 1px solid #9d2967;
+    color: #7a1f52;
+    border-radius: 5px 5px 5px 5px;
+    background-color: white;
+    padding:10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.detail:hover{
+    background-color: #9d2967;
+    color: white;
+    cursor: pointer;
+}
+.apply{
+    background-color: #9d2967;
+    color:white;
+    border-radius: 5px 5px 5px 5px;
+    padding: 10px;
+    border: none;
+    margin-top: 10px;
+}
+.apply:hover{
+    background-color:#7a1f52;
+    cursor: pointer;
+}
+.describe{
+    color:black
+}
+.category{
+    display:flex;
+    gap:10px;
+    align-items: center;
+}
+.category h5{
+    color:#7a1f52;
+}
+.category p{
+    color:grey
+}

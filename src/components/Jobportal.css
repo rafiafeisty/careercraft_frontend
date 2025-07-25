@@ -1,0 +1,67 @@
+.jobportal-container{
+    margin-top:140px;
+    min-height:80vh;
+}
+.category-listing h2{
+    color:#7a1f52;
+}
+.category-listing{
+    margin-left: 20px;
+}
+.big-container{
+    display: flex;
+    gap:30px;
+}
+.side-container{
+    width:20%;
+}
+.catgory-btn-links button{
+    background-color: white;
+    border:1px solid #9d2967;
+    color:#7a1f52;
+    border-radius: 8px 8px 8px 8px;
+    padding:5px;
+    transition: 0.3s ease;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 60px;
+}
+.catgory-btn-links button:hover{
+    cursor: pointer;
+    background-color: #9d2967;
+    color: white;
+}
+.card-portal{
+    width:330px;
+    height:250px;
+    background-color: white;
+    border-radius: 10px 10px 10px 10px;
+    margin-left: 20px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    padding:10px;
+    margin-bottom: 30px;
+}
+.card-portal .describe{
+    margin-top: -30px;
+}
+.card-portal .detail, .card-portal .apply{
+    height:30px;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+    padding: 0 20px;
+    margin-top: 20px;
+    width: 100%;
+    margin-left: 281px;
+}
+.side-container{
+    position:fixed;
+}
+.id-div{
+    display:none;
+}

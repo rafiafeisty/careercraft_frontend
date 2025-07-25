@@ -1,0 +1,159 @@
+.profile-container{
+    margin-top:140px;
+    min-height:60vh;
+}
+.main-head{
+    color:#7a1f52;
+}
+.detail-container{
+    margin-top:140px;
+    height:80vh;
+}
+.apply-container {
+  margin-top: 120px;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.main-head {
+  color: #7a1f52;
+  margin-bottom: 40px;
+}
+
+.apply-formgroup {
+  width: 100%;
+  max-width: 600px;
+  background-color: #fff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-row {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row label {
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #333;
+}
+
+.form-row input[type="text"],
+.form-row input[type="file"] {
+  width: 100%;
+  height: 35px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #7a1f52;
+  outline: none;
+  font-size: 1rem;
+}
+
+.form-row input:focus {
+  border-color: #9d2967;
+  box-shadow: 0 0 0 2px rgba(157, 41, 103, 0.2);
+}
+.cv label{
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #333;
+  margin-right:10px;
+}
+
+.submit-row {
+  text-align: center;
+}
+.cv{
+  margin-bottom: 20px;
+}
+
+.submit-btn {
+  padding: 10px 30px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #7a1f52;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #9d2967;
+}
+.detail-box{
+    margin-top:30px;
+    margin-left:30px;
+}
+.apply-btn{
+  padding: 10px 30px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #7a1f52;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width:160px;
+  height:40px;
+  text-align: center;
+  margin-top: 40px;
+}
+.apply-btn:hover{
+     background-color: #9d2967;
+}
+.job-decsription{
+    width:50%;
+}
+.category-apply p{
+    color: gray;
+}
+.detail-box h3{
+    color: #7a1f52;
+}
+.username-display h3{
+    color: #9d2967;
+    text-decoration: underline;
+}
+.profile-table{
+    margin:auto;
+    margin-top:40px;
+    width:80%;
+}
+
+.profile-table{
+    font-style: normal;
+    margin-bottom: 50px;
+}
+.profile-table th {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 2px solid #7a1f52;
+}
+.profile-table td {
+    text-align: left;
+    border-bottom: 2px solid #7a1f52;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  text-align: left;
+  padding: 18px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.profile-table th{
+    color: #7a1f52;
+}
