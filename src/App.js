@@ -26,7 +26,7 @@ function App() {
 
   useEffect(() => {
   const fetchjobs = async () => {
-    const response = await fetch('https://careercraft-backend.vercel.app/api/auth/portal');
+    const response = await fetch('https://careercraft-backend.vercel.app/auth/portal');
     const data = await response.json();
     setjob(data);
     setfilteredjob(data);

@@ -9,7 +9,7 @@ const Signup = () => {
     const password = document.getElementById("password").value;
 
     try {
-      const response = await fetch('https://careercraft-backend.vercel.app/api/auth/register', {
+      const response = await fetch('https://careercraft-backend.vercel.app/auth/register', {
         method: "POST",
         headers: {
           'Content-Type': 'application/json'

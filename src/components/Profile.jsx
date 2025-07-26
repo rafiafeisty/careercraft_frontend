@@ -11,7 +11,7 @@ const Profile = () => {
         const user_id = localStorage.getItem('userid');
 
         // frontend
-const response = await fetch(`https://careercraft-backend.vercel.app/api/auth/apply?user_id=${user_id}`);
+const response = await fetch(`https://careercraft-backend.vercel.app/auth/apply?user_id=${user_id}`);
 
 
         const data = await response.json();

@@ -13,7 +13,7 @@ const Apply = () => {
     console.log(user_name)
     const user_id=localStorage.getItem("userid")
 
-    const response = await fetch('https://careercraft-backend.vercel.app/api/auth/portal');
+    const response = await fetch('https://careercraft-backend.vercel.app/auth/portal');
     const data = await response.json();
     
     const filtered = data.find(item => item._id === id);
@@ -22,7 +22,7 @@ const Apply = () => {
     const company_name = filtered.company_name;
     const category = filtered.category;
 
-    await fetch('https://careercraft-backend.vercel.app/api/auth/apply', {
+    await fetch('https://careercraft-backend.vercel.app/auth/apply', {
       method: "POST",
       headers: {
         'Content-Type': 'application/json'
