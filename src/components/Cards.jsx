@@ -34,8 +34,8 @@ const Cards = ({jobList}) => {
             <p>{item.category}</p>
           </div>
           <div className="button-group">
-            <button className="detail" onClick={details}>Details</button>
-            <button className="apply" onClick={() => details(item)}>Apply</button>
+            <button className="detail"  onClick={() => details(item)}>Details</button>
+            <button className="apply" onClick={()=>apply(item._id)}>Apply</button>
           </div>
         </div>
         ))}
