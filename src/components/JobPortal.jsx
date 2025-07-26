@@ -13,7 +13,7 @@ const JobPortal = () => {
     navigate('/apply', { state: { jobId: id } });
   }
   const getdata = async () => {
-    const response = await fetch('https://careercraft-backend.vercel.app/api/auth/portal')
+    const response = await fetch('https://careercraft-backend.vercel.app/auth/portal')
     const data = await response.json()
     setjob(data)
   }
