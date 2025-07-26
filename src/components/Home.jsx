@@ -47,7 +47,7 @@ const Home = ({ onSearch }) => {
       <div className="navigator">
         <a href="#" className="previous round a" onClick={() => scroll('left')}>&#8249;</a>
         <div className="navigator-buttons" ref={buttonref}>
-          <button onClick={() => searchbtn("Web developer")}>Web development</button>
+          <button onClick={() => searchbtn("Web development")}>Web development</button>
           <button onClick={() => searchbtn("Machine Learning")}>AI / ML</button>
           <button onClick={() => searchbtn("Frontend")}>Frontend</button>
           <button onClick={() => searchbtn("Backend")}>Backend</button>
