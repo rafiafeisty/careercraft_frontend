@@ -6,9 +6,9 @@ import { useState, useEffect } from 'react'
 const JobPortal = () => {
   const navigate = useNavigate()
   const [job, setjob] = useState([])
-  const details = () => {
-    navigate('/detail')
-  }
+  const details = (job) => {
+  navigate('/detail', { state: { job } });
+};
   const apply = (id) => {
     navigate('/apply', { state: { jobId: id } });
   }
@@ -40,7 +40,7 @@ const JobPortal = () => {
           <div className="side-container">
             <div className="category-listing">
               <div className="catgory-btn-links">
-                <button onClick={() => query("Web Development")}>Wev development</button>
+                <button onClick={() => query("Web Developer")}>Wev development</button>
                 <button onClick={() => query("Machine Learning")}>AI / ML</button>
                 <button onClick={() => query("Frontend")}>Frontend</button>
                 <button onClick={() => query("Backend")}>Backend</button>
@@ -68,7 +68,7 @@ const JobPortal = () => {
                       <p>{j.category}</p>
                     </div>
                     <div className="button-group">
-                      <button className="detail" onClick={details}>Details</button>
+                      <button className="detail" onClick={() => details(j)}>Details</button>
                       <button className="apply" onClick={()=>apply(j._id)}>Apply</button>
                     </div>
                   </div>

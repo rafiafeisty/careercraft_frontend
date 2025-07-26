@@ -7,9 +7,10 @@ import { useEffect } from 'react'
 const Cards = ({jobList}) => {
   const navigate=useNavigate()
   const [job,setjob]=useState([])
-  const details=()=>{
-    navigate('/detail')
-  }
+  const details = (job) => {
+  navigate('/detail', { state: { job } });
+};
+
   const apply=(id)=>{
     navigate('/apply', { state: { jobId: id } });
   }
@@ -34,7 +35,7 @@ const Cards = ({jobList}) => {
           </div>
           <div className="button-group">
             <button className="detail" onClick={details}>Details</button>
-            <button className="apply" onClick={()=>apply(item._id)}>Apply</button>
+            <button className="apply" onClick={() => details(item)}>Apply</button>
           </div>
         </div>
         ))}
