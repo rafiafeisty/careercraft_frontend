@@ -40,7 +40,7 @@ const JobPortal = () => {
           <div className="side-container">
             <div className="category-listing">
               <div className="catgory-btn-links">
-                <button onClick={() => query("Web Development")}>Wev development</button>
+                <button onClick={() => query("Web Development")}>Web development</button>
                 <button onClick={() => query("Machine Learning")}>AI / ML</button>
                 <button onClick={() => query("Frontend")}>Frontend</button>
                 <button onClick={() => query("Backend")}>Backend</button>
